@@ -173,7 +173,7 @@ a.skip:focus {
 
 .container {
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: auto;
     align-content: center;
     justify-content: center;
 }
