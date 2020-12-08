@@ -71,14 +71,19 @@ header {
     border-bottom: 3px solid rgb(31, 97, 50);
     padding: 15px;
     display: flex;
+    align-content: center;
+    justify-content: center;
+
 }
 
 header > nav {
     padding: 20px;
 }
 
-nav {
+nav ul {
+    background-color: #000;
     align-content: center;
+    justify-content: center;
 }
 
 nav ul li {
@@ -90,15 +95,17 @@ nav ul li {
     font-family: 'Syne Mono', 'sans-serif';
     padding: 5px;
     color: #fff;
+    align-content: center;
+    justify-content: center;
 }
 
 nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* currently not working*/
 nav ul li a.current {
-    text-decoration: double underline;
+    font-size: 30px;
+    text-decoration: underline;
 }
 
 nav ul li a {
@@ -285,11 +292,19 @@ button {
     outline: none;
     color: #000;
     position: center;
+    justify-content: center;
+}
+
+fieldset > input[type="submit" i] {
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: rgb(31, 97, 50);
 }
 
 /* reduced motion */
 @media (prefers-reduced-motion: reduce) {
-    .animated-text {
+    .typewriter h1 {
         animation: none;
     }
   }
@@ -324,3 +339,83 @@ button {
     object-fit: cover;
     max-width: 100%;
   }
+
+@media screen and (min-width: 750px) { 
+    nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    nav ul li {
+        padding: 10px;
+    }
+
+    .container {
+        grid-template-columns: repeat(2, auto);
+    }
+    /* Hide the last flip-card to make it an even 2 by 2 column */
+    #pyke.flip-card{
+        display: none;
+    }
+
+    #esports.grid_container{
+        grid-template-areas:
+        'header header header header header header'
+        'img img img main main main'
+        'img img img main main main';
+    }
+/* not working currently*/
+    #esports.grid_container.item2{
+        align-self: center;
+    }
+
+    .grid_container p{
+        font-size: 20px;
+    }
+
+    .grid_container h1{
+        font-size: 30px;
+    }
+
+    .grid_container h2{
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 1200px) { 
+    header {
+        justify-content: flex-start;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .container {
+        grid-template-columns: repeat(3, auto);
+    }
+
+    #pyke.flip-card{
+        display: initial;
+    }
+
+    #esports.grid_container{
+        grid-template-areas:
+        'header header header header header header'
+        'img img img img img img'
+        'main main main main main main';
+    }
+
+    .grid_container p{
+        font-size: 25px;
+    }
+
+    .grid_container h1{
+        font-size: 35px;
+    }
+
+    .grid_container h2{
+        font-size: 30px;
+    }
+}
