@@ -369,9 +369,12 @@ fieldset > input[type="submit" i] {
         'img img img main main main'
         'img img img main main main';
     }
-/* not working currently*/
-    #esports.grid_container.item2{
-        align-self: center;
+
+    #fun_facts.grid_container{
+        grid-template-areas:
+        'header header header header header header'
+        'img img img main main main'
+        'img img img main main main';
     }
 
     .grid_container p{
@@ -385,9 +388,8 @@ fieldset > input[type="submit" i] {
     .grid_container h2{
         font-size: 25px;
     }
-  
+
     form {
-        text-align: center;
         font-size: 115%;
     }
 }
@@ -417,6 +419,13 @@ fieldset > input[type="submit" i] {
         'main main main main main main';
     }
 
+    #fun_facts.grid_container{
+        grid-template-areas:
+        'header header header header header header'
+        'img img img main main main'
+        'img img img main main main';
+    }
+
     .grid_container p{
         font-size: 25px;
     }
@@ -428,7 +437,7 @@ fieldset > input[type="submit" i] {
     .grid_container h2{
         font-size: 30px;
     }
-  
+
     form {
         text-align: left;
         font-size: 150%;
