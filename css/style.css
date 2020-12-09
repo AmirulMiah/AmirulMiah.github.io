@@ -252,6 +252,10 @@ a.skip:focus {
     text-align: center;
 }
 /* form */
+form {
+    align-content: center;
+    text-align: center;
+}
 
 #contact_header {
     font-size: 1.3rem;
