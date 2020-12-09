@@ -385,6 +385,11 @@ fieldset > input[type="submit" i] {
     .grid_container h2{
         font-size: 25px;
     }
+  
+    form {
+        text-align: center;
+        font-size: 115%;
+    }
 }
 
 @media screen and (min-width: 1200px) { 
@@ -422,5 +427,10 @@ fieldset > input[type="submit" i] {
 
     .grid_container h2{
         font-size: 30px;
+    }
+  
+    form {
+        text-align: left;
+        font-size: 150%;
     }
 }
